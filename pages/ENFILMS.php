@@ -4,35 +4,11 @@ $base_path=str_replace('\\','/',dirname(__DIR__).'/');
 require_once($base_path.'include/header.php');
 ?>
     <style>
-        body{ background-image: url("<?= BASE_URL.'assets/'; ?>img/filmback.jpg"); }
-        .menu-item-now {
-        background-color: rgba(59, 5, 17, 0.493);
-        display: inline-block;
-        padding: 15px 10px ;
-        height: 30px;
-        line-height: 30px;
-        color: #fff;
-        text-decoration: none;
-    }
-  
-    section {
-    text-align: center;
-    width: 1000px;
-    height: 400px;
-    margin: auto;
-    margin-bottom: 30px;
-    padding:15px  ;
-    padding-top: 1px ;
-    border-radius: 5px;
-    
- }
- figure.effect {
-     width: 25%;
-     height: 350px;
-     margin: 40px;
+body{background-image:url("<?= BASE_URL.'assets/'; ?>img/filmback.jpg")}
+.menu-item-now{background-color:rgba(59,5,17,.493);display:inline-block;padding:15px 10px;height:30px;line-height:30px;color:#fff;text-decoration:none}
+section{text-align:center;width:1000px;height:400px;margin:auto;margin-bottom:30px;padding:15px;padding-top:1px;border-radius:5px}
+figure.effect{width:25%;height:350px;margin:40px}
 
-
- }
         </style>
 
         <br><br><br>
@@ -52,6 +28,7 @@ require_once($base_path.'include/header.php');
                   <a href="'.BASE_URL.'pages/BADBOY.php?id='.$item['id'].'"></a>
                 </figure>';
                 }
+
                 ?>
             </section>
         </div>

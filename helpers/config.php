@@ -1,49 +1,27 @@
 <?php
 session_start();
 ob_start();
-
 //connection database
-try {
-    $GLOBALS['pdo']=new PDO("mysql:dbname=yalaforgaa;host=localhost",'root','',[
-        PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC,
-        // PDO::ATTR_ERRMODE=>PDO::ERRMODE_SILENT
-    ]);
-} catch (Exception $e) {
-    exit(' database connection fail ');
-} 
-
+try { $GLOBALS['pdo']=new PDO("mysql:dbname=yalaforgaa;host=localhost",'root','',[ PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC, PDO::ATTR_ERRMODE=>PDO::ERRMODE_SILENT ]); }
+catch (Exception $e) { exit(' database connection fail '); }
 // create function
 function create(string $table,string $names,string $values){
     global  $pdo;
-    try {
-        $stm=$pdo->prepare("insert into ".$table." (".$names.") VALUES (".$values.") ");
-        return $stm->execute();
-    } catch (Exception $e) {
-        return false;
-    }
+    try { $stm=$pdo->prepare("insert into ".$table." (".$names.") VALUES (".$values.") "); return $stm->execute();}
+    catch (Exception $e) { return false; }
 }
-
 // update function
 function update(string $table,string $statement,int $id){
     global  $pdo;
-    try {
-        $stm=$pdo->prepare("update ".$table." SET ".$statement." WHERE id=".$id);
-        return $stm->execute();
-    } catch (Exception $e) {
-        return false;
-    }
+    try { $stm=$pdo->prepare("update ".$table." SET ".$statement." WHERE id=".$id); return $stm->execute(); }
+    catch (Exception $e) { return false; }
 }
 // delete function 
 function delete(string $table,int $id){
     global  $pdo;
-    try {
-        $stm=$pdo->prepare("delete from ".$table." WHERE id=".$id);
-        return $stm->execute();
-    } catch (Exception $e) {
-        return false;
-    }
+    try { $stm=$pdo->prepare("delete from ".$table." WHERE id=".$id); return $stm->execute(); }
+    catch (Exception $e) { return false; }
 }
-
 // select function
 function select(string $table,string $statement="",string $column=" * "){
     global  $pdo;
@@ -51,9 +29,8 @@ function select(string $table,string $statement="",string $column=" * "){
         $stm=$pdo->prepare("select ".$column." from ".$table." ".$statement);
         $stm->execute();
         return $stm->fetchAll();
-    } catch (Exception $e) {
-        return false;
     }
+    catch (Exception $e) { return false; }
 }
 
 function login(string $email,string $password){

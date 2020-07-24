@@ -6,113 +6,22 @@ require_once($base_path.'include/header.php');
 ?>
 
 <style>
- 
- .menu-item-now {
-background-color: rgba(59, 5, 17, 0.493);
-display: inline-block;
-padding: 15px 10px ;
-height: 30px;
-line-height: 30px;
-color: #fff;
-text-decoration: none;
-}
+.menu-item-now{background-color:rgba(59,5,17,.493);display:inline-block;padding:15px 10px;height:30px;line-height:30px;color:#fff;text-decoration:none}
+.main_section{border-style:solid;border-width:5px;border-color:#9b036b;border-radius:10px;background-color:rgba(107,4,62,.466);position:absolute;left:40px;top:104px;
+    width:1200px;height:390px;z-index:3}
+.face{position:absolute;left:140px;top:110px;width:152px;height:158px;z-index:7;transition:all 1s ease-in-out}
+.face:hover{transform:rotate(360deg)}
+.whats{position:absolute;left:340px;top:110px;width:152px;height:158px;z-index:6;transition:all 1s ease-in-out}
+.whats:hover{transform:rotate(360deg)}
+.twetter{position:absolute;left:539px;top:110px;width:152px;height:158px;z-index:5;transition:all 1s ease-in-out}
+.twetter:hover{transform:rotate(360deg)}
+.insta{position:absolute;left:736px;top:110px;width:152px;height:158px;z-index:4;transition:all 1s ease-in-out}
+.insta:hover{transform:rotate(360deg)}
+.gmail{position:absolute;left:933px;top:110px;width:152px;height:158px;z-index:5;transition:all 1s ease-in-out}
+.gmail:hover{transform:rotate(360deg)}
+.main_section h4{text-align:center;MARGIN-top:28%;color:#d0ff00;font-size:larger;font-family:Arial,Helvetica,sans-serif}
+body{background-image:url("<?= BASE_URL.'/assets/img/background.png' ?>")}
 
-
- .main_section {
-border-style: solid;
-border-width: 5px;
-border-color: rgb(155, 3, 107);
-border-radius: 10px;
-background-color: rgba(107, 4, 62, 0.466);
-position: absolute;
-left: 40px;
-top: 104px;
-width: 1200px;
-height: 390px;
-z-index: 3;
-}
-
-
-
-
-.face {
-position: absolute;
-left: 140px;
-top: 110px;
-width: 152px;
-height: 158px;
-z-index: 7;
-transition: all 1s ease-in-out ;
-
-}
-.face:hover{
-transform: rotate(360deg);
-}
-
-.whats {
-position: absolute;
-left: 340px;
-top: 110px;
-width: 152px;
-height: 158px;
-z-index: 6;
-transition: all 1s ease-in-out ;
-
-}
-.whats:hover{
-transform: rotate(360deg);
-}
-.twetter {
-position: absolute;
-left: 539px;
-top: 110px;
-width: 152px;
-height: 158px;
-z-index: 5;
-transition: all 1s ease-in-out ;
-
-}
-.twetter:hover{
-transform: rotate(360deg);
-}
-.insta {
-position: absolute;
-left: 736px;
-top: 110px;
-width: 152px;
-height: 158px;
-z-index: 4;
-transition: all 1s ease-in-out ;
-
-}
-.insta:hover{
-transform: rotate(360deg);
-}
-.gmail {
-position: absolute;
-left: 933px;
-top: 110px;
-width: 152px;
-height: 158px;
-z-index: 5;
-transition: all 1s ease-in-out ;
-
-}
-
-.gmail:hover{
-transform: rotate(360deg);
-}
-.main_section h4{
-text-align: center;
-MARGIN-top: 28%;
-color: rgb(208, 255, 0);
-font-size: larger;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-    background-image: url("<?= BASE_URL.'/assets/img/background.png' ?>");
-}
 
 </style>
 

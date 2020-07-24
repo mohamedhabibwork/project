@@ -1,0 +1,68 @@
+*,body,html{margin:0;padding:0}
+@font-face{font-family:Air;src:url(../assets/FONTS/Air.OTF)}
+@font-face{font-family:hand;src:url(../assets/FONTS/Hand.TTF)}
+
+body{background-image:url(/assets/img/background.png);font-family:Air;font-weight:400;font-style:normal;color:#9b036b}
+.MYlogo{width:200px;float:right;padding:9px 20px}
+.facebook{width:160px;float:left;padding:12px 26px}
+.menu{background-color:#9b036b;position:fixed;top:0;left:0;z-index:3000;width:100%;color:#fff;height:60px}
+.menu #logo{float:right;height:30px;padding:15px 30px;line-height:30px;display:none}
+.menu>ul{margin:0;padding:0;float:left;list-style-type:none}
+.menu>ul>li{float:left}
+.menu-item{display:inline-block;padding:15px 10px;height:30px;line-height:30px;color:#fff;text-decoration:none;cursor:pointer}
+.menu-item:hover{background-color:#300;color:#fff}
+.sub-content{background:linear-gradient(to bottom,#ff5db1 0,#ef017c 100%);position:absolute;top:60px;overflow:hidden;background-color:#000;max-height:0}
+.sub-content a{color:#fff;text-decoration:none}
+.sub-drop{padding:0}
+.sub-drop ul{width:100%;padding:0;margin:0;list-style-type:none}
+.sub-drop ul li a{display:inline-block;padding:10px 20px}
+.sub-drop ul li:hover{background-color:#9b036b}
+.menu ul li:hover.sub-content{max-height:400px;transition:max-height .9s ease-in;-webkit-transition:max-height .9s ease-in;-moz-transition:max-height .9s ease-in}
+#rmenu{float:right}
+.txtbox input{width:250px;height:30px;background-color:#fff;font-size:14PX;font-style:oblique;color:#25021a;margin:3.5%;margin-left:2px;margin-right:50px;
+  border:2pxsolid #9b036b;
+  border-radius:8px}
+.txtbox input{text-align:center}
+.search-button button{font-family:"Air Strip Arabic";text-align:center;width:85px;height:30px;background-color:#fdfdfd;border:2pxsolid #9b036b;border-radius:8px;color:#000;
+  font-weight:700;margin:15px;position:relative}
+.search-button button:hover{background-color:#5a033e;color:#fff}
+img{max-width:100%;width:100%;height:100%}
+.cycle-slideshow{box-shadow:7px 10px 20px rgba(255,255,255,.11);top:70px;width:100%;display:block;position:relative;margin:40px 50px;width:330px}
+.cycle-prev{font-size:600%;color:#fff;display:block;position:absolute;top:35%;z-index:500;cursor:pointer}
+.cycle-next{font-size:600%;color:#fff;display:block;position:absolute;top:35%;z-index:500;cursor:pointer}
+.cycle-prev{left:5%}
+.cycle-next{right:5%}
+.cycle-pager{width:100%;position:absolute;text-align:center;z-index:999;bottom:10px}
+.cycle-pager span{width:10px;height:10px;border:1px solid #fff;border-radius:50%;display:inline-block;margin:0 5px;text-indent:100%}
+.cycle-pager .cycle-pager-active{background-color:#fff}
+.advideos{box-shadow:7px 10px 20px rgba(255,255,255,.11);position:absolute;right:440px;top:110px;width:891px;height:493px;z-index:10}
+.advideos video{width:100%;height:100%}
+.container{margin:auto}
+section{background-color:rgba(37,2,26,.5);box-shadow:5px 6px 7px rgba(255,255,255,.301);padding:15px;padding-top:1px;padding-bottom:4px;border-radius:5px;max-height:550px;
+  margin:20px;overflow:hidden}
+figure.effect{font-family:HAND;color:#fff;position:relative;overflow:hidden;background-color:rgba(37,2,26,.5);margin:10px;height:250px;width:15%;text-align:center;float:right}
+figure.effect *{-webkit-box-sizing:padding-box;box-sizing:padding-box;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
+figure.effect img{opacity:1;width:100%}
+figure.effect figcaption{top:50%;left:40px;right:40px;position:absolute;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+figure.effect figcaption h4{position:relative;font-weight:400;text-transform:uppercase;margin:0;-webkit-transform:translateY(70%);transform:translateY(70%);opacity:0}
+figure.effect figcaption h4 span{font-weight:800}
+figure.effect figcaption p{font-size:.6em;font-weight:500;opacity:0;margin:0}
+figure.effect:after,figure.effect:before{position:absolute;top:20px;right:20px;bottom:20px;left:20px;content:'';opacity:0;-webkit-transition:opacity .6s,-webkit-transform .6s;
+  transition:opacity .6s,-webkit-transform .6s,-moz-transform .6s,-o-transform .6s,transform .6s}
+figure.effect:before{border-top:1px double #fff;border-bottom:1px double #fff;-webkit-transform:scale(0,1);transform:scale(0,1)}
+figure.effect:after{border-right:1px double #fff;border-left:1px double #fff;-webkit-transform:scale(1,0);transform:scale(1,0)}
+figure.effect a{left:0;right:0;top:0;bottom:0;position:absolute;z-index:1}
+figure.effect{background:rgba(155,3,107,.2)}
+figure.effect.hover img,figure.effect:hover img{opacity:.2;-webkit-filter:blur(5px);filter:blur(5px);-webkit-transform:scale(1.1);transform:scale(1.1)}
+figure.effect.hover figcaption h4,figure.effect.hover figcaption p,figure.effect:hover figcaption h4,figure.effect:hover figcaption p{opacity:1;border-color:rgba(255,255,255,.5);
+  -webkit-transition-delay:.2s;transition-delay:.2s;-webkit-transform:translateY(0);transform:translateY(0)}
+figure.effect.hover figcaption p,figure.effect:hover figcaption p{-webkit-transition-delay:.3s;transition-delay:.3s}
+figure.effect.hover:after,figure.effect.hover:before,figure.effect:hover:after,figure.effect:hover:before{opacity:.8;-webkit-transform:scale(1);transform:scale(1)}
+::-webkit-scrollbar{background-color:#25021a;width:12px}
+::-webkit-scrollbar-thumb{background-color:#9b036b;border-radius:5px}
+.films{background-color:rgba(37,2,26,.5);width:100%;height:80px;font-weight:800;margin:30px;text-align:center;color:#fff;margin:0}
+.smallad{margin:auto;width:70%;padding:10px}
+.footer{background-color:rgba(35,35,35,.7);color:#dfd7d7;padding:10px 0;overflow:hidden;width:auto;text-align:center;height:98px}
+.footer h2 a{color:#fff;text-decoration:none}
+.footer .copyright{margin-top:20px}
+.footer .copyright span{color:#9b036b}

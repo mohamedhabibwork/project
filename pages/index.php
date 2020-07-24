@@ -36,23 +36,10 @@ data-cycle-pause-on-hover='true'
 </video>  
 </div>
 
-
 <!-------------end img slidwe-------------> 
-
 <br><br><br>
 <div class="films"><h1>أحدث الافلام والمسلسلات </h1></div>
 <br>
-
-
-
-
-
-
-
-
-
-
-
 <div class="container">
        
     <section class="section1">
@@ -72,9 +59,7 @@ data-cycle-pause-on-hover='true'
                 </figure>';
             }
         ?>
-
     </section>
-  
     <div class="smallad" > <img src="<?= BASE_URL.'assets/'; ?>img/ad3.gif" alt="اعلان" ></div>
   <?php
   foreach ([1,2,3,4,5,6] as $i) {
@@ -89,15 +74,9 @@ data-cycle-pause-on-hover='true'
                     <p>'.$item['description'].'</p>
                   </figcaption>
                   <a href="'.BASE_URL.'pages/BADBOY.php?id='.$item['id'].'"></a>
-                </figure>';
-      }
-
+                </figure>';}
       echo '</section><div class="smallad"> <img src="'.BASE_URL.'assets/img/AD2.gif" alt="اعلان" ></div>';
-      }
-
-
-    }
-
+      }}
        $reslut=select('films',' where type=2 order by id desc ');
        if (count($reslut)>0) {
          echo '<section>';
@@ -111,29 +90,8 @@ data-cycle-pause-on-hover='true'
                    <a href="'.BASE_URL.'pages/BADBOY.php?id='.$item['id'].'"></a>
                  </figure>';
        }
-       echo '</section><div class="smallad"> <img src="'.BASE_URL.'assets/img/AD2.gif" alt="اعلان" ></div>';
-       }
+       echo '</section><div class="smallad"> <img src="'.BASE_URL.'assets/img/AD2.gif" alt="اعلان" ></div>';}
       ?>
-
-
   </div>
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--Start Footer-->
-
-<?php
-require_once($base_path.'include/footer.php');
-?>
+<?php require_once($base_path.'include/footer.php');  ?>

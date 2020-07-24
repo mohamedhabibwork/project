@@ -9,12 +9,8 @@ require_once($base_path.'helpers/config.php');
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="<?= BASE_URL.'assets/'; ?>style.css">
-        <link rel="shortcut icon" href="<?= BASE_URL.'assets/'; ?>video.svg" type="image/x-icon" />   
-
-
+        <link rel="shortcut icon" href="<?= BASE_URL.'assets/'; ?>video.svg" type="image/x-icon" />
  </head>
-      
-
     <body>
         <nav class="menu">
 
@@ -28,7 +24,8 @@ require_once($base_path.'helpers/config.php');
             <?php
             if (isset($_SESSION['login'])) {
                 echo '<li><a class="menu-item" href="'.(BASE_URL).'pages/logout.php" > تسجيل الخروج </a> </li>';
-            
+                echo '<li><a class="menu-item" href="'.(BASE_URL).'pages/create_movie.php" > انشاء فلم </a> </li>';
+
             }else{
                 echo '<li><a class="menu-item" href="'.BASE_URL.'pages/login.php" > تسجيل الدخول </a> </li>';
             }
